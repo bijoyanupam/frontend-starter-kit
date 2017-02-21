@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.wrappingColumn": 80,
+    "files.insertFinalNewline": true
+}

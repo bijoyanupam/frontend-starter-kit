@@ -1,0 +1,6 @@
+# Browsers that we support
+
+# Support two most recent versions.
+last 2 versions
+# Older version with higher than 5% usage.
+> 5%

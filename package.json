@@ -1,0 +1,26 @@
+{
+  "name": "frontend-starter-kit",
+  "title": "Front-End Starter Kit",
+  "description": "Front-end starter kit for automated web development",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bijoyanupam/frontend-starter-kit.git"
+  },
+  "author": {
+    "name": "Bijoy K. Anupam",
+    "email": "bijoy.anupam@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bijoyanupam/frontend-starter-kit/issues"
+  },
+  "homepage": "https://github.com/bijoyanupam/frontend-starter-kit#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.4",
+    "grunt": "^1.0.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-sass-lint": "^0.2.2"
+  }
+}
