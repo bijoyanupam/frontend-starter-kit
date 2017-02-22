@@ -41,6 +41,16 @@ module.exports = function (grunt) {
             }
         },
 
+        concat: {
+            options: {
+                sourceMap: true,
+            },
+            dist: {
+                src: ['./assets/js-minified/**/*.js'],
+                dest: './assets/js-minified/combined/main.js'
+            }
+        },
+
         // CSS build configurations.
         sasslint: {
             options: {
@@ -82,5 +92,5 @@ module.exports = function (grunt) {
 
     // Register tasks.
     grunt.task.registerTask('default', ['eslint', 'sasslint']);
-    grunt.task.registerTask('build', ['eslint', 'uglify', 'sasslint', 'sass', 'postcss']);
+    grunt.task.registerTask('build', ['eslint', 'uglify', 'concat', 'sasslint', 'sass', 'postcss']);
 };

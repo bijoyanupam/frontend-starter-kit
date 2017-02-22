@@ -4,6 +4,7 @@ Front-end starter kit for automated web development.
 ## What's included?
 - ESLint: Checks your js files for errors.
 - Uglify: Generate minified JS files with sourcemap.
+- Concat: Combines JS files to one main.js file.
 - SASSLint: To lint the SCSS files.
 - SASS: Compiles SCSS to minified CSS file with sourcemap.
 - Autoprefixer: Parse CSS and automatically add vendor prefixes to CSS rules using values from [Can I Use](http://caniuse.com/).
