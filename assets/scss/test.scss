@@ -1,5 +1,8 @@
+// Sample code for demonstration purpose.
+// Set variables.
 $white: #ffffff;
 $black: #000000;
+// Declare class.
 .example {
     background: linear-gradient(to bottom, $white, $black);
     border-radius: 20px;
