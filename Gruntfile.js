@@ -12,12 +12,25 @@
 module.exports = function (grunt) {
     'use strict';
 
+    // Load the npm plugins.
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+
+        // JS build configurations.
+        eslint: {
+            options: {
+                format: 'stylish'
+            },
+            target: ['./assets/js/*.js']
+        },
+
         // CSS build configurations.
         sasslint: {
             options: {
                 cacheConfig: true,
-                configFile: 'sass-lint.yml',
+                configFile: '.sass-lint.yml',
                 formatter: 'stylish'
             },
             target: ['./assets/scss/*.scss']
@@ -52,11 +65,7 @@ module.exports = function (grunt) {
         }
     });
 
-    // Load the npm plugins.
-    grunt.task.loadNpmTasks('grunt-sass-lint');
-    grunt.task.loadNpmTasks('grunt-sass');
-    grunt.task.loadNpmTasks('grunt-postcss');
-
     // Register tasks.
-    grunt.task.registerTask('build', ['sasslint', 'sass', 'postcss']);
+    grunt.task.registerTask('default', ['eslint', 'sasslint']);
+    grunt.task.registerTask('build', ['eslint', 'sasslint', 'sass', 'postcss']);
 };

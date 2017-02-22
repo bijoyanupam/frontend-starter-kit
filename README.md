@@ -2,6 +2,7 @@
 Front-end starter kit for automated web development.
 
 ## What's included?
+- ESLint: To lint the JS files.
 - SASSLint: To lint the SCSS files.
 - SASS: Compiles SCSS to minified CSS file.
 - Autoprefixer: Parse CSS and add vendor prefixes to CSS rules using values from [Can I Use](http://caniuse.com/).
@@ -23,13 +24,22 @@ Install all required packages as specified in package.json.
 npm install
 ```
 
-Now that the required packages are installed, you are ready to go. Just run below grunt command.
+Now that the required packages are installed, you are ready to go.
+
+To check your js and scss files for errors using eslint and sasslint, run the following grunt command.
+```
+grunt
+```
+
+Ready to go live? Run the following grunt command.
 ```
 grunt build
 ```
 
 ## Configuration
-- SASSLint: Check the sass-lint.yml file. For options, check [sass-lint options](https://github.com/sasstools/sass-lint#options)
+- ESLint: Check the .eslintrc.json file. For options, check [eslintrc](http://eslint.org/docs/user-guide/configuring)
+Check the .eslintignore file. For options, check [eslintignore](http://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)
+- SASSLint: Check the .sass-lint.yml file. For options, check [sass-lint options](https://github.com/sasstools/sass-lint#options)
 - Autoprefixer: Check the browserslist file. For options, check [browserslist options](https://github.com/ai/browserslist#config-file)
 
 ## Note

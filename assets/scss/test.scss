@@ -2,6 +2,7 @@ $white: #ffffff;
 $black: #000000;
 .example {
     background: linear-gradient(to bottom, $white, $black);
+    border-radius: 20px;
     display: flex;
     transition: .5s;
     user-select: none;
