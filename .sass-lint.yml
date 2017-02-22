@@ -9,14 +9,15 @@ options:
 
 # File Options
 files:
-    include: '**/*.s+(a|c)ss'
+    include: './assets/scss/*.s+(a|c)ss'
+    ignore: './assets/scss/deps/**/*.s+(a|c)ss'
 
 # Rule Configuration
 rules:
     # Extends
     extends-before-declarations: 2
     extends-before-mixins: 2
-    placeholder-in-extend: 2
+    placeholder-in-extend: 0
 
     # Mixins
     mixins-before-declarations: 2
@@ -45,7 +46,7 @@ rules:
     no-invalid-hex: 2
     no-mergeable-selectors: 2
     no-misspelled-properties: 2
-    no-qualifying-elements: 2
+    no-qualifying-elements: 0
     no-trailing-whitespace: 2
     no-trailing-zero: 2
     no-transition-all: 2

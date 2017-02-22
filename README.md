@@ -3,8 +3,7 @@ Front-end starter kit for automated web development.
 
 ## What's included?
 - ESLint: Checks your js files for errors.
-- Uglify: Generate minified JS files with sourcemap.
-- Concat: Combines JS files to one main.js file.
+- Uglify: Combines JS files to one main.js file and generate minified JS files with sourcemap.
 - SASSLint: To lint the SCSS files.
 - SASS: Compiles SCSS to minified CSS file with sourcemap.
 - Autoprefixer: Parse CSS and automatically add vendor prefixes to CSS rules using values from [Can I Use](http://caniuse.com/).
@@ -41,7 +40,7 @@ grunt build
 ## Configuration
 - ESLint: Check the .eslintrc.json file. For options, check [eslintrc](http://eslint.org/docs/user-guide/configuring)
 Check the .eslintignore file. For options, check [eslintignore](http://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)
-- SASSLint: Check the .sass-lint.yml file. For options, check [sass-lint options](https://github.com/sasstools/sass-lint#options)
+- SASSLint: Check the .sass-lint.yml file. For options, check [sass-lint options](https://github.com/sasstools/sass-lint/tree/master/docs/rules)
 - Autoprefixer: Check the browserslist file. For options, check [browserslist options](https://github.com/ai/browserslist#config-file)
 
 ## Note

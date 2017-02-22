@@ -27,27 +27,12 @@ module.exports = function (grunt) {
         },
 
         uglify: {
-            dist: {
-                options: {
-                    sourceMap: true,
-                },
-                files: [{
-                    expand: true,
-                    cwd: './assets/js/',
-                    src: ['**/*.js'],
-                    dest: './assets/js-minified/',
-                    ext: '.js'
-                }]
-            }
-        },
-
-        concat: {
             options: {
                 sourceMap: true,
             },
             dist: {
-                src: ['./assets/js-minified/**/*.js'],
-                dest: './assets/js-minified/combined/main.js'
+                src: ['./assets/js/**/*.js'],
+                dest: './assets/js-minified/main.js'
             }
         },
 
@@ -58,7 +43,7 @@ module.exports = function (grunt) {
                 configFile: '.sass-lint.yml',
                 formatter: 'stylish'
             },
-            target: ['./assets/scss/*.scss']
+            target: ['./assets/scss/**/*.scss']
         },
 
         sass: {
@@ -92,5 +77,5 @@ module.exports = function (grunt) {
 
     // Register tasks.
     grunt.task.registerTask('default', ['eslint', 'sasslint']);
-    grunt.task.registerTask('build', ['eslint', 'uglify', 'concat', 'sasslint', 'sass', 'postcss']);
+    grunt.task.registerTask('build', ['eslint', 'uglify', 'sasslint', 'sass', 'postcss']);
 };
