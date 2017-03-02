@@ -3,6 +3,5 @@
     "files.autoSave": "onFocusChange",
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "boundary",
-    "editor.wrappingColumn": 80,
     "files.insertFinalNewline": true
 }
