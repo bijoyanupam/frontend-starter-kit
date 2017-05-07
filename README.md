@@ -42,7 +42,9 @@ npm run build
 - ESLint: Check the .eslintrc.json file. For options, check [eslintrc](http://eslint.org/docs/user-guide/configuring)
 Check the .eslintignore file. For options, check [eslintignore](http://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories)
 - SASSLint: Check the .sass-lint.yml file. For options, check [sass-lint options](https://github.com/sasstools/sass-lint/tree/master/docs/rules)
+- Babel: Check the .babelrc file. For options, check [babelrc](https://babeljs.io/docs/usage/api/#options)
 - Autoprefixer: Check the browserslist file. For options, check [browserslist options](https://github.com/ai/browserslist#config-file)
 
 ## Note
-EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. For more, please visit: [EditorConfig](http://editorconfig.org/). A .editorconfig file is included with this project. Please use it for linting to work correcttly.
+- EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. For more, please visit: [EditorConfig](http://editorconfig.org/). A .editorconfig file is included with this project. Please use it for linting to work correcttly.
+- JSBeautify tool is supported with .jsbeautifyrc file. Most of the editors and IDEs has extension support. For more, read [JSBeautifier](http://jsbeautifier.org/).
