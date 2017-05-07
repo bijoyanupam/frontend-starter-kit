@@ -46,5 +46,5 @@ Check the .eslintignore file. For options, check [eslintignore](http://eslint.or
 - Autoprefixer: Check the browserslist file. For options, check [browserslist options](https://github.com/ai/browserslist#config-file)
 
 ## Note
-- EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. For more, please visit: [EditorConfig](http://editorconfig.org/). A .editorconfig file is included with this project. Please use it for linting to work correcttly.
+- EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. For more, please visit: [EditorConfig](http://editorconfig.org/). A .editorconfig file is included with this project. Please use these configurations for linting to work correctly.
 - JSBeautify tool is supported with .jsbeautifyrc file. Most of the editors and IDEs has extension support. For more, read [JSBeautifier](http://jsbeautifier.org/).
