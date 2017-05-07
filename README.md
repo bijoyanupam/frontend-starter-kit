@@ -10,6 +10,7 @@ Front-end starter kit for automated web development.
 
 ## Getting Started
 Install [Node.js](https://nodejs.org/).
+Remember: You do not need to install Grunt globally. The Grunt commands are run as npm scripts from a local install.
 
 Get this front-end starter kit by git clone or downloading the latest zip file.
 
@@ -27,14 +28,14 @@ npm install
 
 Now that the required packages are installed, you are ready to go.
 
-To check your js and scss files for errors using eslint and sasslint, run the following grunt command.
+To check your js and scss files for errors using eslint and sasslint, run the following grunt command using npm scripts.
 ```
-grunt
+npm run lint
 ```
 
-Ready to go live? Run the following grunt command.
+Ready to go live? Run the following grunt command using npm scripts.
 ```
-grunt build
+npm run build
 ```
 
 ## Configuration
@@ -44,4 +45,4 @@ Check the .eslintignore file. For options, check [eslintignore](http://eslint.or
 - Autoprefixer: Check the browserslist file. For options, check [browserslist options](https://github.com/ai/browserslist#config-file)
 
 ## Note
-I use VS Code editor and have added related settings. You can exclude/delete them if you use a different editor.
+EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. For more, please visit: [EditorConfig](http://editorconfig.org/). A .editorconfig file is included with this project. Please use it for linting to work correcttly.
