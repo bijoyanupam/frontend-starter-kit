@@ -9,73 +9,73 @@
  *
  * @return void
  */
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     'use strict';
 
     // Load the npm plugins.
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+        'pkg': grunt.file.readJSON('package.json'),
 
         // JS build configurations.
-        eslint: {
-            options: {
-                format: 'stylish'
+        'eslint': {
+            'options': {
+                'format': 'stylish'
             },
-            target: ['./assets/js/*.js']
+            'target': ['./assets/js/**/*.js']
         },
 
-        uglify: {
-            options: {
-                sourceMap: true,
+        'babel': {
+            'options': {
+                'babelrc': true
             },
-            dist: {
-                src: ['./assets/js/**/*.js'],
-                dest: './assets/js-minified/main.js'
+            'dist': {
+                'src': ['./assets/js/**/*.js'],
+                'dest': './assets/js-minified/main.js'
             }
         },
 
         // CSS build configurations.
-        sasslint: {
-            options: {
-                cacheConfig: true,
-                configFile: '.sass-lint.yml',
-                formatter: 'stylish'
+        'sasslint': {
+            'options': {
+                'cacheConfig': true,
+                'configFile': '.sass-lint.yml',
+                'formatter': 'stylish'
             },
-            target: ['./assets/scss/**/*.scss']
+            'target': ['./assets/scss/**/*.scss']
         },
 
-        sass: {
-            options: {
-                sourceMap: true,
-                outputStyle: 'compressed'
+        'sass': {
+            'options': {
+                'sourceMap': true,
+                'outputStyle': 'compressed'
             },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: './assets/scss/',
-                    src: ['**/*.scss'],
-                    dest: './assets/css/',
-                    ext: '.css'
+            'dist': {
+                'files': [{
+                    'expand': true,
+                    'cwd': './assets/scss/',
+                    'src': ['**/*.scss'],
+                    'dest': './assets/css/',
+                    'ext': '.css'
                 }]
             }
         },
 
         // Post CSS build configurations.
-        postcss: {
-            options: {
-                processors: [
+        'postcss': {
+            'options': {
+                'processors': [
                     require('autoprefixer')
                 ]
             },
-            dist: {
-                src: './assets/css/*.css'
+            'dist': {
+                'src': './assets/css/*.css'
             }
         }
     });
 
     // Register tasks.
     grunt.task.registerTask('default', ['eslint', 'sasslint']);
-    grunt.task.registerTask('build', ['eslint', 'uglify', 'sasslint', 'sass', 'postcss']);
+    grunt.task.registerTask('build', ['eslint', 'babel', 'sasslint', 'sass', 'postcss']);
 };
