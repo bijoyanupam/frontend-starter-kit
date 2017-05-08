@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bijoyanupam/frontend-starter-kit#readme",
   "devDependencies": {
-    "autoprefixer": "^6.7.4",
+    "autoprefixer": "^7.0.1",
     "babel-preset-env": "^1.4.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^6.0.0",
