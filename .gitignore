@@ -1,5 +1,5 @@
 /node_modules/
 /assets/css/
-/assets/js-minified/
+/assets/js-build/
 /.vscode/
 *.log
