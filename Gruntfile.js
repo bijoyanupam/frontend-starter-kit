@@ -26,13 +26,23 @@ module.exports = function(grunt) {
             'target': ['./assets/js/**/*.js']
         },
 
-        'babel': {
+        'browserify': {
             'options': {
-                'babelrc': true
+                'transform': ["babelify"]
             },
             'dist': {
                 'src': ['./assets/js/**/*.js'],
-                'dest': './assets/js-minified/main.js'
+                'dest': './assets/js-build/main.js'
+            }
+        },
+
+        'uglify': {
+            'options': {
+                'sourceMap': true,
+            },
+            'dist': {
+                'src': ['./assets/js-build/main.js'],
+                'dest': './assets/js-build/main.min.js'
             }
         },
 
@@ -77,5 +87,5 @@ module.exports = function(grunt) {
 
     // Register tasks.
     grunt.task.registerTask('default', ['eslint', 'sasslint']);
-    grunt.task.registerTask('build', ['eslint', 'babel', 'sasslint', 'sass', 'postcss']);
+    grunt.task.registerTask('build', ['eslint', 'browserify', 'uglify', 'sasslint', 'sass', 'postcss']);
 };
