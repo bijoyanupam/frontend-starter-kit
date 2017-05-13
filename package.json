@@ -1,37 +1,39 @@
 {
-    "name": "frontend-starter-kit",
-    "title": "Front-End Starter Kit",
-    "description": "Front-end starter kit for automated web development",
-    "version": "1.1.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/bijoyanupam/frontend-starter-kit.git"
-    },
-    "scripts": {
-        "lint": "grunt",
-        "build": "grunt build",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": {
-        "name": "Bijoy K. Anupam",
-        "email": "bijoy.anupam@gmail.com"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/bijoyanupam/frontend-starter-kit/issues"
-    },
-    "homepage": "https://github.com/bijoyanupam/frontend-starter-kit#readme",
-    "devDependencies": {
-        "autoprefixer": "^7.0.1",
-        "babel-preset-env": "^1.4.0",
-        "babelify": "^7.3.0",
-        "grunt": "^1.0.1",
-        "grunt-browserify": "^5.0.0",
-        "grunt-contrib-uglify": "^2.1.0",
-        "grunt-eslint": "^19.0.0",
-        "grunt-postcss": "^0.8.0",
-        "grunt-sass": "^2.0.0",
-        "grunt-sass-lint": "^0.2.2",
-        "load-grunt-tasks": "^3.5.2"
-    }
+  "name": "frontend-starter-kit",
+  "title": "Front-End Starter Kit",
+  "description": "Front-end starter kit for automated web development",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bijoyanupam/frontend-starter-kit.git"
+  },
+  "scripts": {
+    "lint": "grunt",
+    "build": "grunt build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Bijoy K. Anupam",
+    "email": "bijoy.anupam@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bijoyanupam/frontend-starter-kit/issues"
+  },
+  "homepage": "https://github.com/bijoyanupam/frontend-starter-kit#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "babel-preset-env": "^1.4.0",
+    "babelify": "^7.3.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-sass-lint": "^0.2.2",
+    "load-grunt-tasks": "^3.5.2",
+    "normalize.css": "^7.0.0",
+    "postcss-import": "^9.1.0"
+  }
 }
