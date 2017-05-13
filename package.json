@@ -25,6 +25,7 @@
     "autoprefixer": "^7.0.1",
     "babel-preset-env": "^1.4.0",
     "babelify": "^7.3.0",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-uglify": "^2.1.0",

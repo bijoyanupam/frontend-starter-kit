@@ -77,7 +77,8 @@ module.exports = function(grunt) {
             'options': {
                 'processors': [
                     require('autoprefixer'),
-                    require('postcss-import')
+                    require('postcss-import'),
+                    require('cssnano')
                 ]
             },
             'dist': {

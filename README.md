@@ -9,6 +9,8 @@ Front-end starter kit for automated web development.
 - SASSLint: To lint the SCSS files.
 - SASS: Compiles SCSS to minified CSS file with sourcemap.
 - Autoprefixer: Parse CSS and automatically add vendor prefixes to CSS rules using values from [Can I Use](http://caniuse.com/).
+- postcss-import: Can consume local files, node modules or web_modules using inline @import rules.
+- cssnano: Modular minifier, built on top of the PostCSS ecosystem. For more please check [cssnano.co](http://cssnano.co).
 
 ## Getting Started
 Install [Node.js](https://nodejs.org/).
