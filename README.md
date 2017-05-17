@@ -2,6 +2,7 @@
 Front-end starter kit for automated web development.
 
 ## What's included?
+- Unit Testing (QUnit): Support for unit testing using [QUnit](https://qunitjs.com/) in a headless browser instance of PhantomJS using a static web server.
 - ESLint: Checks your js files for errors.
 - Babel: Transpile ES6 based JS files for current browsers.
 - Browserify: Bundles node.js-style modules for current browsers and combine them into one file.
@@ -33,9 +34,18 @@ npm install
 
 Now that the required packages are installed, you are ready to go.
 
-To check your js and scss files for errors using eslint and sasslint, run the following grunt command using npm scripts.
+To check your js and scss files for errors and unit testing using qunit, eslint and sasslint, run the following grunt command using npm scripts.
 ```
-npm run lint
+npm run test
+```
+To build your JavaScript files after unit testing and eslint has passed. It then transpiles your ES6 code using babel, if required and combines the modules into one and then uglify them.
+```
+npm run build-js
+```
+
+To build your CSS files after sasslint has passed. It then compiles SASS to CSS and applies postcss steps, like autoprefixer, inline import files from node_module and minify them.
+```
+npm run build-css
 ```
 
 Ready to go live? Run the following grunt command using npm scripts.

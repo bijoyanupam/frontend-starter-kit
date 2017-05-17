@@ -9,7 +9,7 @@
  *
  * @return void
  */
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
 
     // Load the npm plugins.
@@ -19,6 +19,16 @@ module.exports = function(grunt) {
         'pkg': grunt.file.readJSON('package.json'),
 
         // JS build configurations.
+        'qunit': {
+            'all': {
+                'options': {
+                    'urls': [
+                        'http://localhost:<%= connect.server.options.port %>/tests/js/example/example.html'
+                    ]
+                }
+            }
+        },
+
         'eslint': {
             'options': {
                 'format': 'stylish'
@@ -84,10 +94,21 @@ module.exports = function(grunt) {
             'dist': {
                 'src': './assets/css/*.css'
             }
+        },
+
+        // Static webserver.
+        'connect': {
+            'server': {
+                'options': {
+                    'port': 8000,
+                    'base': '.'
+                }
+            }
         }
     });
 
     // Register tasks.
-    grunt.task.registerTask('default', ['eslint', 'sasslint']);
-    grunt.task.registerTask('build', ['eslint', 'browserify', 'uglify', 'sasslint', 'sass', 'postcss']);
+    grunt.task.registerTask('test', ['connect', 'qunit', 'eslint', 'sasslint']);
+    grunt.task.registerTask('build-js', ['connect', 'qunit', 'eslint', 'browserify', 'uglify']);
+    grunt.task.registerTask('build-css', ['sasslint', 'sass', 'postcss']);
 };
