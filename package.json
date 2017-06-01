@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/bijoyanupam/frontend-starter-kit#readme",
   "devDependencies": {
-    "autoprefixer": "^7.0.1",
-    "babel-preset-env": "^1.4.0",
+    "autoprefixer": "^7.1.1",
+    "babel-preset-env": "^1.5.1",
     "babelify": "^7.3.0",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
