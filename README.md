@@ -22,7 +22,7 @@ Get this front-end starter kit by git clone or downloading the latest zip file.
 
 For example:
 ```
-git clone git@github.com:bijoyanupam/frontend-starter-kit.git
+git clone https://github.com/bijoyanupam/frontend-starter-kit.git
 ```
 
 Once downloaded, navigate to the folder. You could also rename the folder as per your project name.
