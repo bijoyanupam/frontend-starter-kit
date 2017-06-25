@@ -24,7 +24,7 @@
   "homepage": "https://github.com/bijoyanupam/frontend-starter-kit#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
-    "babel-preset-env": "^1.5.1",
+    "babel-preset-env": "^1.5.2",
     "babelify": "^7.3.0",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
@@ -39,6 +39,6 @@
     "load-grunt-tasks": "^3.5.2",
     "normalize.css": "^7.0.0",
     "postcss-import": "^9.1.0",
-    "qunitjs": "^2.3.2"
+    "qunitjs": "^2.3.3"
   }
 }
