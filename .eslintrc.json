@@ -1,4 +1,8 @@
 {
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -12,12 +16,10 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-const-assign": "warn",
-    "no-this-before-super": "warn",
-    "no-undef": "warn",
-    "no-unreachable": "warn",
-    "no-unused-vars": "warn",
-    "constructor-super": "warn",
-    "valid-typeof": "warn"
+    // Custom rules for current project.
+    "space-before-function-paren": ["error", "never"],
+    "semi": ["error", "always", {
+      "omitLastInOneLineBlock": true
+    }]
   }
 }
