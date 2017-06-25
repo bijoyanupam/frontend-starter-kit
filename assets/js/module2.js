@@ -1,3 +1,6 @@
 // module2.js
-import { sum, pi } from "./lib/math";
+import {
+  sum,
+  pi
+} from "./lib/math";
 console.log("2π = " + sum(pi, pi));

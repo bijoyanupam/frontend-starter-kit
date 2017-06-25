@@ -1,7 +1,7 @@
 {
-    "comments": false,
-    "minified": true,
-    "sourceMaps": true,
-    "presets": ["env"],
-    "ignore": []
+  "comments": false,
+  "minified": true,
+  "sourceMaps": true,
+  "presets": ["env"],
+  "ignore": []
 }

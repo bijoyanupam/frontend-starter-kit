@@ -4,218 +4,218 @@
 
 # Linter Options
 options:
-    # Don't merge default rules
-    merge-default-rules: false
+  # Don't merge default rules
+  merge-default-rules: false
 
 # File Options
 files:
-    include: './assets/scss/*.s+(a|c)ss'
-    ignore: './assets/scss/deps/**/*.s+(a|c)ss'
+  include: './assets/scss/*.s+(a|c)ss'
+  ignore: './assets/scss/deps/**/*.s+(a|c)ss'
 
 # Rule Configuration
 rules:
-    # Extends
-    extends-before-declarations: 2
-    extends-before-mixins: 2
-    placeholder-in-extend: 0
+  # Extends
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+  placeholder-in-extend: 0
 
-    # Mixins
-    mixins-before-declarations: 2
+  # Mixins
+  mixins-before-declarations: 2
 
-    # Line Spacing
-    empty-line-between-blocks: 0
+  # Line Spacing
+  empty-line-between-blocks: 0
 
-    # Disallows
-    no-attribute-selectors: 0
-    no-color-hex: 0
-    no-color-keywords: 2
-    no-color-literals:
-        - 2
-        - allow-map-identifiers: true
-          allow-rgba: false
-          allow-variable-identifiers: true
-    no-combinators: 0
-    no-css-comments: 2
-    no-debug: 2
-    no-disallowed-properties: 0
-    no-duplicate-properties: 2
-    no-empty-rulesets: 2
-    no-extends: 0
-    no-ids: 2
-    no-important: 2
-    no-invalid-hex: 2
-    no-mergeable-selectors: 2
-    no-misspelled-properties: 2
-    no-qualifying-elements: 0
-    no-trailing-whitespace: 2
-    no-trailing-zero: 2
-    no-transition-all: 2
-    no-universal-selectors: 0
-    no-url-protocols: 2
-    no-vendor-prefixes: 0
-    no-warn: 2
-    property-units:
-        - 2
-        - global: [
-            'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
-            'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
-            'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
-            'deg', 'grad', 'rad', 'turn',            # Angle
-            'ms', 's',                               # Duration
-            'Hz', 'kHz',                             # Frequency
-            'dpi', 'dpcm', 'dppx',                   # Resolution
-            '%']                                     # Other
-        - per-property: {}
+  # Disallows
+  no-attribute-selectors: 0
+  no-color-hex: 0
+  no-color-keywords: 2
+  no-color-literals:
+    - 2
+    - allow-map-identifiers: true
+      allow-rgba: false
+      allow-variable-identifiers: true
+  no-combinators: 0
+  no-css-comments: 2
+  no-debug: 2
+  no-disallowed-properties: 0
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-extends: 0
+  no-ids: 2
+  no-important: 2
+  no-invalid-hex: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 2
+  no-qualifying-elements: 0
+  no-trailing-whitespace: 2
+  no-trailing-zero: 2
+  no-transition-all: 2
+  no-universal-selectors: 0
+  no-url-protocols: 2
+  no-vendor-prefixes: 0
+  no-warn: 2
+  property-units:
+    - 2
+    - global: [
+        'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
+        'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
+        'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
+        'deg', 'grad', 'rad', 'turn',            # Angle
+        'ms', 's',                               # Duration
+        'Hz', 'kHz',                             # Frequency
+        'dpi', 'dpcm', 'dppx',                   # Resolution
+        '%']                                     # Other
+    - per-property: {}
 
-    # Nesting
-    force-attribute-nesting: 0
-    force-pseudo-nesting: 0
+  # Nesting
+  force-attribute-nesting: 0
+  force-pseudo-nesting: 0
 
-    # Name Formats
-    class-name-format:
-        - 2
-        - allow-leading-underscore: false
-          convention: 'hyphenatedlowercase'
-    function-name-format:
-        - 2
-        - allow-leading-underscore: false
-          convention: 'hyphenatedlowercase'
-    id-name-format:
-        - 2
-        - allow-leading-underscore: false
-          convention: 'hyphenatedlowercase'
-    mixin-name-format:
-        - 2
-        - allow-leading-underscore: false
-          convention: 'hyphenatedlowercase'
-    placeholder-name-format:
-        - 2
-        - allow-leading-underscore: false
-          convention: 'hyphenatedlowercase'
-    variable-name-format:
-        - 2
-        - allow-leading-underscore: false
-          convention: 'hyphenatedlowercase'
+  # Name Formats
+  class-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: 'hyphenatedlowercase'
+  function-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: 'hyphenatedlowercase'
+  id-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: 'hyphenatedlowercase'
+  mixin-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: 'hyphenatedlowercase'
+  placeholder-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: 'hyphenatedlowercase'
+  variable-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: 'hyphenatedlowercase'
 
-    # Style Guide
-    attribute-quotes:
-        - 2
-        - include: true
-    bem-depth:
-        - 2
-        - max-depth: 1
-    border-zero:
-        - 2
-        - convention: '0'
-    brace-style:
-        - 2
-        - style: '1tbs'
-          allow-single-line: false
-    clean-import-paths:
-        - 2
-        - filename-extension: false
-          leading-underscore: false
-    empty-args:
-        - 2
-        - include: false
-    hex-length:
-        - 2
-        - style: long
-    hex-notation:
-        - 2
-        - style: lowercase
-    indentation:
-        - 2
-        - size: 4
-    leading-zero:
-        - 2
-        - include: false
-    nesting-depth:
-        - 2
-        - max-depth: 3
-    property-sort-order:
-        - 2
-        - order: 'alphabetical'
-          ignore-custom-properties: false
-    pseudo-element: 2
-    quotes:
-        - 2
-        - style: single
-    shorthand-values:
-        - 2
-        - allowed-shorthands: [1, 2, 3]
-    url-quotes: 2
-    variable-for-property:
-        - 2
-        - properties:
-            # This list of properties should be kept updated with newer rules
-            # Please check: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  # Style Guide
+  attribute-quotes:
+    - 2
+    - include: true
+  bem-depth:
+    - 2
+    - max-depth: 1
+  border-zero:
+    - 2
+    - convention: '0'
+  brace-style:
+    - 2
+    - style: '1tbs'
+      allow-single-line: false
+  clean-import-paths:
+    - 2
+    - filename-extension: false
+      leading-underscore: false
+  empty-args:
+    - 2
+    - include: false
+  hex-length:
+    - 2
+    - style: long
+  hex-notation:
+    - 2
+    - style: lowercase
+  indentation:
+    - 2
+    - size: 2
+  leading-zero:
+    - 2
+    - include: false
+  nesting-depth:
+    - 2
+    - max-depth: 3
+  property-sort-order:
+    - 2
+    - order: 'alphabetical'
+      ignore-custom-properties: false
+  pseudo-element: 2
+  quotes:
+    - 2
+    - style: single
+  shorthand-values:
+    - 2
+    - allowed-shorthands: [1, 2, 3]
+  url-quotes: 2
+  variable-for-property:
+    - 2
+    - properties:
+      # This list of properties should be kept updated with newer rules
+      # Please check: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
-            # Color related CSS rules
-            - background-color
-            - border-block-end-color
-            - border-block-start-color
-            - border-bottom-color
-            - border-color
-            - border-inline-end-color
-            - border-inline-start-color
-            - border-left-color
-            - border-right-color
-            - border-top-color
-            - color
-            - column-rule-color
-            - outline-color
-            - text-decoration-color
-            - text-emphasis-color
+      # Color related CSS rules
+      - background-color
+      - border-block-end-color
+      - border-block-start-color
+      - border-bottom-color
+      - border-color
+      - border-inline-end-color
+      - border-inline-start-color
+      - border-left-color
+      - border-right-color
+      - border-top-color
+      - color
+      - column-rule-color
+      - outline-color
+      - text-decoration-color
+      - text-emphasis-color
 
-            # Image related CSS rules
-            - background-image
-            - border-image
-            - list-style-image
-            - mask-image
+      # Image related CSS rules
+      - background-image
+      - border-image
+      - list-style-image
+      - mask-image
 
-            # Size related CSS rules
-            - font-size
+      # Size related CSS rules
+      - font-size
 
-            # FontType related CSS rules
-            - font-family
+      # FontType related CSS rules
+      - font-family
 
-            # Global Index related CSS rules
-            - z-index'
-    zero-unit:
-        - 2
-        - include: false
+      # Global Index related CSS rules
+      - z-index'
+  zero-unit:
+    - 2
+    - include: false
 
-    # Inner Spacing
-    space-after-bang:
-        - 2
-        - include: false
-    space-after-colon:
-        - 2
-        - include: true
-    space-after-comma:
-        - 2
-        - include: true
-    space-around-operator:
-        - 2
-        - include: true
-    space-before-bang:
-        - 2
-        - include: true
-    space-before-brace:
-        - 2
-        - include: true
-    space-before-colon:
-        - 2
-        - include: false
-    space-between-parens:
-        - 2
-        - include: false
+  # Inner Spacing
+  space-after-bang:
+    - 2
+    - include: false
+  space-after-colon:
+    - 2
+    - include: true
+  space-after-comma:
+    - 2
+    - include: true
+  space-around-operator:
+    - 2
+    - include: true
+  space-before-bang:
+    - 2
+    - include: true
+  space-before-brace:
+    - 2
+    - include: true
+  space-before-colon:
+    - 2
+    - include: false
+  space-between-parens:
+    - 2
+    - include: false
 
-    # Final Items
-    final-newline:
-        - 2
-        - include: true
-    trailing-semicolon:
-        - 2
-        - include: true
+  # Final Items
+  final-newline:
+    - 2
+    - include: true
+  trailing-semicolon:
+    - 2
+    - include: true
