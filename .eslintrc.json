@@ -16,7 +16,6 @@
     "sourceType": "module"
   },
   "rules": {
-    // Custom rules for current project.
     "space-before-function-paren": ["error", "never"],
     "semi": ["error", "always", {
       "omitLastInOneLineBlock": true
