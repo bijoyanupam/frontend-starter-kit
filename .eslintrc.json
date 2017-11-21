@@ -1,3 +1,8 @@
+/**
+ * This config is based on JavaScript Standard Style.
+ * https://standardjs.com/
+ * https://github.com/standard/eslint-config-standard
+ */
 {
   "extends": [
     "eslint:recommended",
@@ -7,7 +12,8 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "amd": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -16,9 +22,32 @@
     "sourceType": "module"
   },
   "rules": {
-    "space-before-function-paren": ["error", "never"],
-    "semi": ["error", "always", {
-      "omitLastInOneLineBlock": true
-    }]
+    "no-irregular-whitespace": [
+      "error",
+      {
+        "skipComments": true
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ],
+    "valid-jsdoc": [
+      "error"
+    ],
+    "no-console": [
+      "warn"
+    ]
   }
 }
