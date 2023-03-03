@@ -8,6 +8,7 @@
     "url": "https://github.com/bijoyanupam/frontend-starter-kit.git"
   },
   "scripts": {
+    "prepare": "husky install",
     "test": "grunt test",
     "build-js": "grunt build-js",
     "build-css": "grunt build-css",
